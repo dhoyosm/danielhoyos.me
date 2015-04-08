@@ -1,7 +1,9 @@
 /* Colors */
-
 $bg_soft-blue: #6593A3;
 $bg_oragne: #ff865e;
+
+$gutter: 5px;
+
 html {
     font-family: Geneva, Tahoma, Verdana, sans-serif;
     font-size: 100%;
@@ -10,15 +12,15 @@ html {
 }
 
 h1 {
-	font-size: 3rem;
+    font-size: 3rem;
     margin: 0;
-    padding: 4px; 
+    padding: $gutter;
 }
 
 h2 {
-	font-size: 2rem;
+    font-size: 2rem;
     margin: 0;
-    padding: 4px; 
+    padding: $gutter;
 }
 
 .home {
@@ -33,6 +35,13 @@ h2 {
         display: table-cell;
         vertical-align: middle;
         width: 100%
+    }
+    
+    img {
+    	border-radius: 50%;
+        height: 30vh;
+        max-height: 230px;
+        padding: $gutter;
     }
 }
 

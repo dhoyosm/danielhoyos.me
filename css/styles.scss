@@ -1,8 +1,9 @@
 /* Colors */
-$bg_soft-blue: #6593A3;
+$bg_soft-blue: #0CA5B0;
 $bg_oragne: #ff865e;
+$bg_milk: #FEFEEB;
 
-$gutter: 5px;
+$gutter: 10px;
 
 html {
     font-family: Geneva, Tahoma, Verdana, sans-serif;
@@ -37,15 +38,38 @@ h2 {
         width: 100%
     }
     
-    img {
-    	border-radius: 50%;
-        height: 30vh;
-        max-height: 230px;
-        padding: $gutter;
+    .profile {
+    	img {
+	    	border-radius: 50%;
+	        height: 30vh;
+	        max-height: 230px;
+	        padding: $gutter;
+	        transition: all 0.3s;
+	    }
+	    img:hover {
+    		height: 33vh;
+    	}
+    }
+
+    .social {
+		display: block;
+		a {
+			text-decoration: none;
+		}
+    	img {
+	        height: 34px;
+	        padding: $gutter;
+	        transition: all 0.3s;
+	        width: 34px;
+        }
+        img:hover {
+			height: 40px;
+	        width: 40px;
+        }
     }
 }
 
 .about {
-    background-color: $bg_oragne;
-    color: white;
+    background-color: $bg_milk;
+    //color: white;
 }

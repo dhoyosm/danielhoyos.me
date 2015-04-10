@@ -75,6 +75,7 @@ main {
 }
 
 section {
+    text-align: center;
     padding: 5px;
     padding-top: 20px;
     h2 {
@@ -86,7 +87,6 @@ section {
 .about {}
 
 .skills {
-    text-align: center;
     section {
         h2 {
             font-size: 1.3rem;
@@ -112,7 +112,6 @@ section {
 }
 
 .experience {
-    text-align: center;
     article {
         padding-top: 16px;
         text-align: left;

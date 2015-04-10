@@ -3,90 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Daniel Hoyos</title>
 </head>
 
 <body>
-    <header id="home">
-        <h1>Daniel Hoyos</h1>
-        <h2>Software and Web Developer</h2>
+    <header class="home" id="home">
+        <div>
+            <h1>Daniel Hoyos</h1>
+            <h2>Software and Web Developer</h2>
+            <figure class="profile">
+                <img src="images/danielhoyos.jpg" alt="Daniel Hoyos">
+            </figure>
+            <div class="social">
+                <a href="//twitter.com/dhoyosm">
+                    <img src="images/Twitter_logo_white.png" alt="Twitter dhoyosm">
+                </a>
+                <a href="//github.com/dhoyosm">
+                    <img src="images/GitHub-Mark-Light-32px.png" alt="github dhoyosm">
+                </a>
+                <a href="//co.linkedin.com/in/dhoyosm/en">
+                    <img src="images/In-White-34px-R.png" alt="LinkedIn dhoyosm">
+                </a>
+            </div>
+        </div>
     </header>
-    <section class="about" id="about">
-        <h2>About Daniel</h2>
-        <p>
-            Greetings! My name is Daniel Hoyos, a curious and fun guy born and raised in the exotic and diverse lands of Colombia. Dog-lover, football-player, book-reader. I enjoy experiencing new adventures and learning about a wide range of fields.
-        </p>
-        <p>
-            As a professional, I have dedicated most of the my as a back-end developer implementing business logic and integrating it with databases, but my curiosity and my adventurous spirit have led me into learning new technologies and languages specially in the front-end field.
-        </p>
-    </section>
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <article>
-            <h2>Back-End</h2>
+    <main>
+        <section class="about" id="about">
+            <h2>About Daniel</h2>
             <p>
-                I have a six-year marriage with JAVA (love and loathe in the air), implementing web applications and services in combination with Spring, and integrating them with databases such PostgreSQL, MySQL, and SQL Server.
+                Greetings! My name is Daniel Hoyos, a curious and fun guy born and raised in the exotic and diverse lands of Colombia. Dog-lover, football-player, book-reader. I enjoy experiencing new adventures and learning about a wide range of fields.
             </p>
-        </article>
-        <article>
-            <h2>Process</h2>
             <p>
-                Most of the projects I have been involved with, use Agile/Scrum methodology. I also have worked extensively with tools inside the Atlassian family (Jira, Confluence, Bitbucket). GIT is my favorite source control system, but SVN and CVS have been part of some projects as well.
+                As a professional, I have dedicated most of the my time as a back-end developer implementing business logic and integrating it with databases, but my curiosity and my adventurous spirit have led me into learning new technologies and languages specially in the front-end field.
             </p>
-        </article>
-        <article>
-            <h2>Front-End</h2>
-            <p>
-                I am still a toddler on the front-end, and at the moment I am gaining experience in the HTML5 world, learning all about HTML, CSS3, and JavaScript. I have picked into some helpful technologies like JQuery, AngularJS, Backbone, and SASS.
-            </p>
-        </article>
-        <article>
-            <h2>CMS</h2>
-            <p>
-                For the past couple of years, I have been creating components and services in Adobe’s AEM. In addition, I have helped to implement sites in Magento and Joomla.
-            </p>
-        </article>
-        <article>
-            <h2>Soft skills</h2>
-            <p>
-                It is my personal mission to maintain a clear and cordial communication with all parties involved in the development process. I am fluent in Spanish as my native language and I have strong English skills.
-            </p>
-        </article>
-        <article>
-            <h2>Tools</h2>
-            <p>
-                Eclipse, Sublime, DiffMerge, Chrome, SourceTree, Google Docs, and SiteFlow are some of the tools I use to bring wonderful ideas into reality.
-            </p>
-        </article>
-    </section>
-    <section class="experience" id="experience">
-        <h2>Experience</h2>
-        <article>
-            <h2>Software Engineer</h2>
-            <h3>Prodigious LATAM (2013 – current)</h3>
-            <p>
-                AEM Backend developer for multiple projects, creating OSGi services and AEM components and helped on the creation of a hands-on basic training to introduce AEM concepts and functionality, and mentoring new members into this technology. Designer and developer of intermediate logic layer in Java and implementing Spring MVC to integrate the persistence layer (databases or external services) with the presentation layer through RESTful web services.
-            </p>
-        </article>
-        <article>
-            <h2>Software Developer</h2>
-            <h3>PayU  (2010 – 2012)</h3>
-            <p>
-                Member of the trading platform maintenance team, that achieved the PCI DSS Compliance Certification for the organization. Java Developer of the transactional and administrative platform, keeping the system up to date for its continuous improvement.
-            </p>
-        </article>
-        <article>
-            <h2>Software Analyst</h2>
-            <h3>OESIA Colombia (2008 – 2010)</h3>
-            <p>
-                Main duties included developing a Web application to schedule and control services appointments for an energy company, involving technologies and frameworks like Java, Struts, Tiles, Hibernate, and Oracle 10g. And for a local financial organization, performing internal maintenance under the same technologies.
-            </p>
-        </article>
-    </section>
-    <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Work in progress...</p>
-    </section>
+        </section>
+        <hr>
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <section>
+                <article>
+                    <h2>Back-End</h2>
+                    <p>
+                        I have a six-year marriage with JAVA (love and loathe in the air), implementing web applications and services in combination with Spring, and integrating them with databases such PostgreSQL, MySQL, and SQL Server.
+                    </p>
+                </article>
+                 <article>
+                    <h2>Front-End</h2>
+                    <p>
+                        I am still a toddler on the front-end, learning all about HTML, CSS3, and JavaScript. I have picked into some helpful technologies like JQuery, AngularJS, Backbone, and SASS.
+                    </p>
+                </article>
+                <article>
+                    <h2>CMS</h2>
+                    <p>
+                        For the past couple of years, I have been creating components and services in Adobe’s AEM. In addition, I have helped to implement sites in Magento and Joomla.
+                    </p>
+                </article>
+                <article>
+                    <h2>Process</h2>
+                    <p>
+                        Most of the projects I have been involved with, use Agile/Scrum methodology. I also have worked extensively with tools inside the Atlassian family (Jira, Confluence, Bitbucket). 
+                    </p>
+                </article>
+                <article>
+                    <h2>Source Control</h2>
+                    <p>
+                        GIT is my favorite source control system and therefore the one I use the most, but SVN and CVS have been part of some projects as well.
+                    </p>
+                </article>
+                <article style="display: none;">
+                    <h2>Soft skills</h2>
+                    <p>
+                        It is my personal mission to maintain a clear and cordial communication with all parties involved in the development process. I am fluent in Spanish as my native language and I have strong English skills.
+                    </p>
+                </article>
+                <article>
+                    <h2>Tools</h2>
+                    <p>
+                        Eclipse, Sublime, DiffMerge, Chrome, SourceTree, Google Docs, and SiteFlow are some of the tools I use to bring wonderful ideas into reality.
+                    </p>
+                </article>
+            </section>
+        </section>
+        <hr>
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+            <article>
+                <h2>Software Engineer</h2>
+                <h3>Prodigious LATAM (2013 – current)</h3>
+                <p>
+                    AEM Backend developer for multiple projects, creating OSGi services and AEM components and helped on the creation of a hands-on basic training to introduce AEM concepts and functionality, and mentoring new members into this technology. Designer and developer of intermediate logic layer in Java and implementing Spring MVC to integrate the persistence layer (databases or external services) with the presentation layer through RESTful web services.
+                </p>
+            </article>
+            <article>
+                <h2>Software Developer</h2>
+                <h3>PayU LATAM (2010 – 2012)</h3>
+                <p>
+                    Member of the trading platform maintenance team, that achieved the PCI DSS Compliance Certification for the organization. Java Developer of the transactional and administrative platform, keeping the system up to date for its continuous improvement.
+                </p>
+            </article>
+            <article>
+                <h2>Software Analyst</h2>
+                <h3>OESIA Colombia (2008 – 2010)</h3>
+                <p>
+                    Main duties included developing a Web application to schedule and control services appointments for an energy company, involving technologies and frameworks like Java, Struts, Tiles, Hibernate, and Oracle 10g. And for a local financial organization, performing internal maintenance under the same technologies.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Work in progress...</p>
+        </section>
+    </main>
 </body>
 
 </html>

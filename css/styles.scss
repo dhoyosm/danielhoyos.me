@@ -149,6 +149,16 @@ section {
     p {
         font-size: 0.93rem; //95
     }
+    @media (min-width: 350px) {
+        article {
+            height: 262px; //248
+            padding: 15px; //10
+            width: 262px; //248
+        }
+        p {
+            font-size: 0.95rem; //93
+        }
+    }
 }
 
 .experience {

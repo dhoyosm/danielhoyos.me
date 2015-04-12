@@ -88,6 +88,7 @@ main {
             @include border-radius(50%);
             height: 30vh;
             max-height: 230px;
+            transform: rotate(24deg); // Only for this image
             transition: all 0.3s;
         }
         img:hover {

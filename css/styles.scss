@@ -19,6 +19,13 @@ $main-width: 100%;
     display: flex;
 }
 
+@mixin align-self($var) {
+    -webkit-align-self: $var;
+    -moz-align-self: $var;
+    -ms-align-self: $var;
+    align-self: $var;
+}
+
 @mixin justify-content($var) {
     -webkit-justify-content: $var;
     -moz-justify-content: $var;
@@ -178,6 +185,73 @@ section {
         p {
             margin: 0;
             padding-top: $gutter;
+        }
+    }
+}
+
+.portfolio {
+    @include display-flex();
+    @include flex-direction(column);
+    section {
+        h2 {
+            font-size: 1.3rem;
+        }
+        @include display-flex();
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+        max-width: $max-width;
+    }
+    article {
+        @include border-radius(10px);
+        @include display-flex();
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+        border: 2px solid;
+        margin: 5px;
+        padding: $gutter;
+        position: relative;
+        width: 265px;
+        figure {
+            margin: 0;
+        }
+        img {
+            @include border-radius(10px);
+            display: block;
+            height: auto;
+            position: relative;
+            width: 100%;
+        }
+        div {
+            @include border-radius(8px);
+            @include display-flex();
+            @include flex-direction(column);
+            @include justify-content(space-around);
+            h2 {}
+            p {
+                margin: 0;
+                padding: 1px;
+            }
+            a {
+                @include border-radius(8px);
+                @include align-self(center);
+                background: white;
+                color: $bg_hot-water-blue;
+                padding: $gutter;
+                text-decoration: none;
+                text-transform: lowercase;
+                width: 50px;
+            }
+            background: $bg_hot-water-blue;
+            color: white;
+            left: 0;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        div:hover {
+            opacity: 0.9;
         }
     }
 }

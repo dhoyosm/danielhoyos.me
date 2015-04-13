@@ -47,6 +47,14 @@ $main-width: 100%;
     flex-wrap: $var;
 }
 
+@mixin transform($var) {
+    -webkit-transform: $var;
+    -moz-transform: $var;
+    -ms-transform: $var;
+    -o-transform: $var;
+    transform: $var;
+}
+
 html {
     font-family: Geneva, Tahoma, Verdana, sans-serif;
     font-size: 100%;
@@ -93,9 +101,9 @@ main {
         }
         img {
             @include border-radius(50%);
+            @include transform(rotate(24deg)); // Only for this image
             height: 30vh;
             max-height: 230px;
-            transform: rotate(24deg); // Only for this image
             transition: all 0.3s;
         }
         img:hover {

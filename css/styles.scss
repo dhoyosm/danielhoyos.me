@@ -239,6 +239,7 @@ section {
         @include flex-wrap(wrap);
         @include justify-content(center);
         border: 2px solid;
+        height: 168px;
         margin: 5px;
         padding: $gutter;
         position: relative;

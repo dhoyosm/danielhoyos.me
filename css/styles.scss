@@ -90,15 +90,23 @@ main {
     position: relative;
     text-align: center;
     width: 100%;
+    @media (max-height: 400px) {
+        h1 {
+            font-size: 10vh;
+            padding: 1vh;
+        }
+        h2 {
+            font-size: 7vh;
+            padding: 1vh;
+        }
+    }
     div {
         display: table-cell;
         vertical-align: middle;
         width: 100%
     }
     .profile {
-        figure {
-            padding: $gutter;
-        }
+    	margin: 12px;
         img {
             @include border-radius(50%);
             @include transform(rotate(24deg)); // Only for this image
@@ -129,6 +137,13 @@ main {
         img:hover {
             height: 40px;
             width: 40px;
+        }
+        @media (max-height: 400px) {
+            img {
+                height: 28px;
+                padding: 8px;
+                width: 28px;
+            }
         }
         p {
             margin: 0;

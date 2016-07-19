@@ -64,6 +64,20 @@
                 });
             });
         },{offset:'80%'});
+
+        $('.skills').waypoint(function(){
+            $('.chart-sm').each(function(){
+            $(this).easyPieChart({
+                    size:100,
+                    animate: 2000,
+                    lineCap:'butt',
+                    scaleColor: false,
+                    barColor: '#FF5252',
+                    trackColor: 'transparent',
+                    lineWidth: 8
+                });
+            });
+        },{offset:'80%'});
         
         
         /* ---------------------------------------------- /*

@@ -443,7 +443,7 @@ textarea.form-control {
  * Skills
 /* ---------------------------------------------- */
 
-.chart {
+.chart, .chart-sm {
     display: inline-block;
     height: 140px;
     margin: 50px 0;
@@ -452,7 +452,14 @@ textarea.form-control {
     width: 140px;
 }
 
-.chart canvas {
+.chart-sm {
+    height: 100px;
+    margin: 25px 0;
+    width: 100px;
+}
+
+.chart canvas,
+.chart-sm canvas {
     left: 0;
     position: absolute;
     top: 0;
@@ -464,6 +471,11 @@ textarea.form-control {
     font-weight: 300;
     line-height: 140px;
     z-index: 2;
+}
+
+.chart-sm .percent {
+    font-size: 20px;
+    line-height: 100px;
 }
 
 .percent:after {

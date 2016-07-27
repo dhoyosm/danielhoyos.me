@@ -1043,6 +1043,15 @@ figure.effect-bubba:hover p {
     margin-left: 3em;
 }
 
+#about img {
+    height: 140px;
+    margin: 20px;
+}
+
+#about p {
+    margin: 20px;
+}
+
 #experience img {
     width: 60px;
 }
@@ -1050,11 +1059,12 @@ figure.effect-bubba:hover p {
 #experience h4 {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 8px;
 }
 
 #experience h5 a {
     color: #A6E22E;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 

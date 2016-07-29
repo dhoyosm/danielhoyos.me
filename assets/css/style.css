@@ -190,6 +190,8 @@ textarea.form-control {
     font-size: 13px;
     padding: 8px 26px;
     border: 0;
+    background: #A6E22E;
+    font-weight: bold;
 }
 
 .btn:hover,
